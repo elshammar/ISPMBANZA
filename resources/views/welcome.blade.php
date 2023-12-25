@@ -8,7 +8,7 @@
     @livewireStyles
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline text-gray-600">
+  <h1 class="text-xl font-bold underline text-red-600">
     Hello world!
   </h1>
   @livewireScripts
