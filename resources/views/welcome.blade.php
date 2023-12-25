@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1 class="text-xl font-bold underline text-red-600">
-    Hello world!
+    <livewire:home>
   </h1>
   @livewireScripts
 </body>
