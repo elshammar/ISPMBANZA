@@ -14,10 +14,12 @@ return new class extends Migration
         Schema::create('options', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->integer('depId');
+            $table->integer('depart_id');
             $table->text('descrip');
             $table->timestamps();
         });
+
+    
     }
 
     /**
