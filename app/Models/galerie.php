@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class galerie extends Model
 {
     use HasFactory;
+    protected $fillable=['lib'];
+
 }

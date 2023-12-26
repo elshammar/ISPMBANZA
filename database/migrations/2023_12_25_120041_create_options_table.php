@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('options', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->integer('depart_id');
+            $table->foreignId('departement_id')->constrained();
             $table->text('descrip');
             $table->timestamps();
         });

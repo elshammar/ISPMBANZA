@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('titre');
             $table->text('descrip');
             $table->string('auteur');
-            $table->string('adresse');
             $table->timestamps();
         });
     }

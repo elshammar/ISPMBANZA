@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class reseau extends Model
 {
     use HasFactory;
+    protected $fillable=['lib','lien','icon'];
+
 }
