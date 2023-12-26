@@ -8,12 +8,13 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use App\Models\departement;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\DepartementResource\Pages;
 use App\Filament\Resources\DepartementResource\RelationManagers;
-use Filament\Forms\Components\Select;
 
 class DepartementResource extends Resource
 {
@@ -36,7 +37,8 @@ class DepartementResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('nom'),
+                TextColumn::make('descrip'),
             ])
             ->filters([
                 //

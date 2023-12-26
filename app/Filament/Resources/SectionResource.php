@@ -8,6 +8,7 @@ use App\Models\section;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\SectionResource\Pages;
@@ -33,7 +34,8 @@ class SectionResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('nom'),
+                TextColumn::make('descrip'),
             ])
             ->filters([
                 //
