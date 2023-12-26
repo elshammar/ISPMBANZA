@@ -6,7 +6,7 @@
             </div>
             <div class="flex gap-5   text-sm  " >
                 <div class=""><a href="#" class="">ACCUEIL</a></div>
-                <div><a href="#">EVENEMENTS</a></div>
+                <div class=""><a href="#">EVENEMENTS</a></div>
                 <div><a href="#">SECTIONS</a></div>
                 <div><a href="#">REVUES</a></div>
                 <div><a href="#">CONTACT</a></div>
@@ -31,5 +31,4 @@
             </div>
         </div>
     </div>
-
 </div>
