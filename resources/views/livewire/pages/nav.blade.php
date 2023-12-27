@@ -1,10 +1,10 @@
 <div class="fixed w-screen">
-    <div class="flex justify-between px-40 border border-1 py-3  gap-0 items-center ">
+    <div class="flex justify-between px-40 border border-1 border-gray-800 py-3  gap-0 items-center ">
         <div class="flex items-center gap-20">
             <div class="">
                 <img src="{{asset('assets/imgs/log.png')}}" alt="" srcset="" class="w-16">
             </div>
-            <div class="flex gap-10   text-lg text-white font-bold " >
+            <div class="flex gap-10   text-xl text-white  " >
                 <div class=""><a href="#" class="">ACCUEIL</a></div>
                 <div class=""><a href="#">EVENEMENTS</a></div>
                 <div><a href="#">SECTIONS</a></div>
