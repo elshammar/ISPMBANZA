@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ContactResource\Pages;
@@ -32,7 +33,8 @@ class ContactResource extends Resource
                         'adresse'=>'adresse',
                     ])
                     ->required(),
-                TextInput::make('contenue'),
+                TextInput::make('contenu'),
+                TextInput::make('icon'),
             ]);
     }
 
@@ -40,7 +42,9 @@ class ContactResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('lib'),
+                TextColumn::make('contenu'),
+                TextColumn::make('icon'),
             ])
             ->filters([
                 //

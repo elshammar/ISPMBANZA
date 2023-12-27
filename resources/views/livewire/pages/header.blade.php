@@ -20,12 +20,32 @@
                 <div>
                     Le meileur cadre pour votre apprentissage Univertitaire
                 </div>
+                
             </div>
             <div class=" ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 ">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg>
                   
+            </div>
+        </div>
+    </div>
+    <div class=" " style="position: absolute; top:80%">
+        <div class="grid grid-cols-12 gap-8 px-40 w-full">
+            <div class=" col-span-3">
+                <img src="{{asset('assets/imgs/w.jpeg')}}" alt="" srcset="" class="h-72 w-full">
+            </div>
+            <div class=" col-span-3">
+                <img src="{{asset('assets/imgs/etu2.jpg')}}" alt="" srcset="" class="h-72 w-full">
+
+            </div>
+            <div class=" col-span-3">
+                <img src="{{asset('assets/imgs/h.jpg')}}" alt="" srcset="" class="h-72 w-full">
+
+            </div>
+            <div class=" col-span-3">
+                <img src="{{asset('assets/imgs/h.jpg')}}" alt="" srcset="" class="h-72 w-full">
+
             </div>
         </div>
     </div>

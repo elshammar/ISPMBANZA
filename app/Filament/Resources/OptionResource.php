@@ -2,20 +2,23 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\OptionResource\Pages;
-use App\Filament\Resources\OptionResource\RelationManagers;
-use App\Models\Option;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use App\Models\option;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\OptionResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\OptionResource\RelationManagers;
 
 class OptionResource extends Resource
 {
-    protected static ?string $model = Option::class;
+    protected static ?string $model = option::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -23,7 +26,10 @@ class OptionResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('nom'),
+                Select::make('departement_id')
+                    ->relationship('departement','id'),
+                TextInput::make('descrip'),
             ]);
     }
 
@@ -31,7 +37,8 @@ class OptionResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('nom'),
+                TextColumn::make('descrip'),
             ])
             ->filters([
                 //

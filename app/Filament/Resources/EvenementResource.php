@@ -2,20 +2,22 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\EvenementResource\Pages;
-use App\Filament\Resources\EvenementResource\RelationManagers;
-use App\Models\Evenement;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Forms\Form;
+use App\Models\evenement;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\EvenementResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\EvenementResource\RelationManagers;
 
 class EvenementResource extends Resource
 {
-    protected static ?string $model = Evenement::class;
+    protected static ?string $model = evenement::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -23,7 +25,9 @@ class EvenementResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('titre'),
+                TextInput::make('descrip'),
+                TextInput::make('lieuEven')
             ]);
     }
 
@@ -31,8 +35,10 @@ class EvenementResource extends Resource
     {
         return $table
             ->columns([
-                //
-            ])
+                TextColumn::make('titre'),
+                TextColumn::make('descrip'),
+                TextColumn::make('lieuEven'),
+                ])
             ->filters([
                 //
             ])
