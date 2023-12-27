@@ -1,4 +1,4 @@
-<div>
-    SECTION
+<div >
+    section
     <livewire:component.depart>
 </div>

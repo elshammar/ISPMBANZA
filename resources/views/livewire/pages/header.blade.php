@@ -1,8 +1,12 @@
 <div class="h-screen bg-cover" style="background-image: url('assets/imgs/i.jpg')" >
     <div class=" h-screen w-full bg-gray-900 opacity-80 ">
+
+        {{-- Nav --}}
         <div>
             <livewire:pages.nav>
         </div> 
+
+        {{-- Code header --}}
         <div class="text-white flex py-20 px-40 h-full w-full justify-between  items-center">
             <div class=" text-6xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
@@ -30,6 +34,8 @@
             </div>
         </div>
     </div>
+
+    {{-- images gallerie dans header --}}
     <div class=" " style="position: absolute; top:80%">
         <div class="grid grid-cols-12 gap-8 px-40 w-full">
             <div class=" col-span-3">

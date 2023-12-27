@@ -1,9 +1,13 @@
 <div class="fixed w-screen">
     <div class="flex justify-between px-40 border border-1 border-gray-800 py-3  gap-0 items-center ">
         <div class="flex items-center gap-20">
+
+            {{-- logo site --}}
             <div class="">
                 <img src="{{asset('assets/imgs/log.png')}}" alt="" srcset="" class="w-16">
             </div>
+
+            {{-- liens pages --}}
             <div class="flex gap-10   text-xl text-white  " >
                 <div class=""><a href="#" class="">ACCUEIL</a></div>
                 <div class=""><a href="#">EVENEMENTS</a></div>
@@ -13,6 +17,8 @@
                 <div class=""><a href="#">PROCEDURE D'INSCRIPTION</a></div>
             </div>
         </div>
+
+        {{-- liens reseaux nav --}}
         <div class="flex justify-center gap-2 items-center border-l-4 pl-3">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 48 48" class="text-white ">
