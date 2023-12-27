@@ -1,8 +1,5 @@
 <div>
-    <div class="" >
-        <div>
-            <livewire:pages.nav>
-        </div>
+    <div >
         <div>
             <livewire:pages.header>
         </div>
