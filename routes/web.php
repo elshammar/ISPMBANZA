@@ -1,8 +1,10 @@
 <?php
 
-use App\Livewire\Homes;
-use App\Livewire\Pages\Nav;
+
+use App\Livewire\Home;
 use App\Livewire\Pages\About;
+use App\Livewire\Pages\Contact;
+use App\Livewire\Pages\Section;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +21,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/contact', Contact::class);
+Route::get('/about', About::class);
+Route::get('/section', Section::class);
+
+
+
+
 
 
 
