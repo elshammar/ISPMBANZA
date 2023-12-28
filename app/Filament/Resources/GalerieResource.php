@@ -10,9 +10,13 @@ use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Forms\Components\FileUpload;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\GalerieResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use App\Filament\Resources\GalerieResource\RelationManagers;
 
 class GalerieResource extends Resource
@@ -26,6 +30,7 @@ class GalerieResource extends Resource
         return $form
             ->schema([
                 TextInput::make('lib'),
+                SpatieMediaLibraryFileUpload::make('images')
             ]);
     }
 
@@ -34,6 +39,7 @@ class GalerieResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('lib'),
+                SpatieMediaLibraryImageColumn::make('images')
             ])
             ->filters([
                 //

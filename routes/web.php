@@ -1,5 +1,8 @@
 <?php
 
+use App\Livewire\Homes;
+use App\Livewire\Pages\Nav;
+use App\Livewire\Pages\About;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +19,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+

@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>
-    <livewire:home>
+   <livewire:home>
   </h1>
   @livewireScripts
 </body>
