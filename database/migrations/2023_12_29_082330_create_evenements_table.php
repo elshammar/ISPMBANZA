@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('titre');
             $table->text('descrip');
             $table->string('lieuEven');
+            $table->date('date');
+            $table->time('heure');
             $table->timestamps();
         });
     }

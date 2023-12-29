@@ -5,12 +5,15 @@ namespace App\Filament\Resources;
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
-use App\Models\evenement;
+use App\Models\evenements;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\TimePicker;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Forms\Components\DateTimePicker;
 use App\Filament\Resources\EvenementResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
@@ -19,7 +22,7 @@ use App\Filament\Resources\EvenementResource\RelationManagers;
 
 class EvenementResource extends Resource
 {
-    protected static ?string $model = evenement::class;
+    protected static ?string $model = evenements::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -30,6 +33,17 @@ class EvenementResource extends Resource
                 TextInput::make('titre'),
                 TextInput::make('descrip'),
                 TextInput::make('lieuEven'),
+                DatePicker::make('date'),
+                TimePicker::make('heure')
+                    ->datalist([
+                        '09:00',
+                        '09:30',
+                        '10:00',
+                        '10:30',
+                        '11:00',
+                        '11:30',
+                        '12:00',
+                    ]),
                 SpatieMediaLibraryFileUpload::make('images')
             ]);
     }
@@ -41,6 +55,10 @@ class EvenementResource extends Resource
                 TextColumn::make('titre'),
                 TextColumn::make('descrip'),
                 TextColumn::make('lieuEven'),
+                TextColumn::make('date')
+                    ->date(),
+                TextColumn::make('heure')
+                    ->time(),
                 SpatieMediaLibraryImageColumn::make('images')
                 ])
             ->filters([
