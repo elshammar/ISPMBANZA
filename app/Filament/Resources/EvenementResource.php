@@ -13,6 +13,8 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\EvenementResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use App\Filament\Resources\EvenementResource\RelationManagers;
 
 class EvenementResource extends Resource
@@ -27,7 +29,8 @@ class EvenementResource extends Resource
             ->schema([
                 TextInput::make('titre'),
                 TextInput::make('descrip'),
-                TextInput::make('lieuEven')
+                TextInput::make('lieuEven'),
+                SpatieMediaLibraryFileUpload::make('images')
             ]);
     }
 
@@ -38,6 +41,7 @@ class EvenementResource extends Resource
                 TextColumn::make('titre'),
                 TextColumn::make('descrip'),
                 TextColumn::make('lieuEven'),
+                SpatieMediaLibraryImageColumn::make('images')
                 ])
             ->filters([
                 //

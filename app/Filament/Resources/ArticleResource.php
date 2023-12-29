@@ -13,6 +13,8 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ArticleResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use App\Filament\Resources\ArticleResource\RelationManagers;
 
 class ArticleResource extends Resource
@@ -27,7 +29,8 @@ class ArticleResource extends Resource
             ->schema([
                 TextInput::make('titre'),
                 TextInput::make('descrip'),
-                TextInput::make('auteur')
+                TextInput::make('auteur'),
+                SpatieMediaLibraryFileUpload::make('images')
             ]);
     }
 
@@ -38,6 +41,7 @@ class ArticleResource extends Resource
                 TextColumn::make('titre'),
                 TextColumn::make('descrip'),
                 TextColumn::make('auteur'),
+                SpatieMediaLibraryImageColumn::make('images')
             ])
             ->filters([
                 //

@@ -14,6 +14,8 @@ use Filament\Forms\Components\RichEditor;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\AproposResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use App\Filament\Resources\AproposResource\RelationManagers;
 
 class AproposResource extends Resource
@@ -28,6 +30,7 @@ class AproposResource extends Resource
             ->schema([
                 TextInput::make('titre'),
                 TextInput::make('descrip'),
+                SpatieMediaLibraryFileUpload::make('images')
             ]);
     }
 
@@ -37,6 +40,7 @@ class AproposResource extends Resource
             ->columns([
                 TextColumn::make('titre'),
                 TextColumn::make('descrip'),
+                SpatieMediaLibraryImageColumn::make('images')
             ])
             ->filters([
                 //
