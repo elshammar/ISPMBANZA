@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
-class article extends Model implements HasMedia
+class Articles extends Model implements HasMedia
 {
     use InteractsWithMedia;
     use HasFactory;
-    protected $fillable=['titre','descrip','auteur'];
+    protected $fillable=['titre','descrip','auteur','date'];
 }

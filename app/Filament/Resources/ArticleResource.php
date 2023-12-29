@@ -4,12 +4,13 @@ namespace App\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\article;
+use App\Models\Articles;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\DatePicker;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ArticleResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -19,7 +20,7 @@ use App\Filament\Resources\ArticleResource\RelationManagers;
 
 class ArticleResource extends Resource
 {
-    protected static ?string $model = article::class;
+    protected static ?string $model = Articles::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -30,6 +31,7 @@ class ArticleResource extends Resource
                 TextInput::make('titre'),
                 TextInput::make('descrip'),
                 TextInput::make('auteur'),
+                DatePicker::make('date'),
                 SpatieMediaLibraryFileUpload::make('images')
             ]);
     }
@@ -41,6 +43,8 @@ class ArticleResource extends Resource
                 TextColumn::make('titre'),
                 TextColumn::make('descrip'),
                 TextColumn::make('auteur'),
+                TextColumn::make('date')
+                    ->date(),
                 SpatieMediaLibraryImageColumn::make('images')
             ])
             ->filters([
