@@ -16,6 +16,7 @@
             </div>
         </div>
         <div class=" col-span-3">
+            {{$image}}
             <img src="{{asset('assets/imgs/un.jpg')}}" alt="" srcset="">
             
         </div>
