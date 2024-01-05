@@ -1,4 +1,4 @@
-<div class=" bg-gray-900 ">
+<div class=" bg-gray-900 Av reservoir, Noki,Mbanza-Ngungu, Kongo-Central, RDC">
     <div class="flex justify-between border-b py-3 px-40">
 
         {{-- logo footer --}}
@@ -40,7 +40,7 @@
                 Adresse
             </div>
             <div class="text-xl text-gray-400 py-5">
-                Av reservoir, Noki,Mbanza-Ngungu, Kongo-Central, RDC
+                
             </div>
         </div>
         <div class=" col-span-2 pl-2">

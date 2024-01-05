@@ -7,7 +7,7 @@
 
             {{-- Code about --}}
             <div>
-                <livewire:pages.about>
+                <livewire:component.about>
             </div>
 
             {{-- Code section version juste dans home --}}
@@ -335,3 +335,12 @@
             <livewire:pages.footer>
         </div>
 </div>
+<script>
+    const scrolling = ()=>{
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600)
+            document.querySelector('#nav').classList.add('bg-red-700');
+        else 
+            document.querySelector('#nav').classList.remove('bg-red-700');
+    }
+    window.addEventListener("scroll",scrolling)
+</script>

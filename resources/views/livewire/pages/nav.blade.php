@@ -1,5 +1,5 @@
 <div class="fixed w-screen">
-    <div class="flex justify-between px-40 border border-1 border-gray-800 py-3  gap-0 items-center ">
+    <div class="flex justify-between px-40 border border-1 border-gray-800 py-3  gap-0 items-center" id="nav">
         <div class="flex items-center gap-20">
 
             {{-- logo site --}}
