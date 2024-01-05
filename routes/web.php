@@ -36,4 +36,3 @@ Route::get('/article', article::class);
 
 
 
-
