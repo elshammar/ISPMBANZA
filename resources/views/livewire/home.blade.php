@@ -70,9 +70,7 @@
                     <div>
                         <livewire:component.even>
                     </div>
-                    <div>
-                        <livewire:component.even>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -109,7 +107,7 @@
             {{-- Code grid article --}}
             <div class="grid grid-cols-3 gap-10">
             
-                <!-- @foreach($article as $articles)
+                @foreach($article as $articles)
                 {{-- Code article1 --}}
                 <div class=" shadow-xl">
                     <div class="mb-5">
@@ -149,7 +147,7 @@
                         Lire plus...
                     </div>
                 </div>
-                @endforeach -->
+                @endforeach 
 
             </div>
         </div> 

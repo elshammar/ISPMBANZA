@@ -22,59 +22,35 @@
 
             {{-- Code du premier card temoignage --}}
             <div class="grid grid-cols-2 px-10 gap-24">
+                @foreach ($temoignages as $temoignage)
                 <div class="bg-white p-5 grid grid-cols-12 gap-3">
-                    <div class="col-span-1">
-                        <div class=" rounded-full p-1 w-28 absolute left-40">
-                            <img src="{{asset('assets/imgs/etu2.jpg')}}" alt="" srcset="" class="w-28 rounded-full h-24 border-2 shadow-lg">
-                        </div>
-                    </div>
-                    <div class=" col-span-11 p-3">
-                        <div class="flex justify-between">
-                            <div class="flex flex-col gap-2 pb-5">
-                                <div class="text-gray-900 text-3xl">
-                                    Merciadi Diki
-                                </div>
-                                <div class="text-gray-600 text-2xl">
-                                    Developpeur web chez Systematique
-                                </div>
+                        <div class="col-span-1">
+                            <div class=" rounded-full p-1 w-28 absolute left-40">
+                                <img src="{{$temoignage->getMedia()[0]['original_url']}}" alt="" srcset="" class="w-28 rounded-full h-24 border-2 shadow-lg">
                             </div>
-                            <div>
+                        </div>
+                        <div class=" col-span-11 p-3">
+                            <div class="flex justify-between">
+                                <div class="flex flex-col gap-2 pb-5">
+                                    <div class="text-gray-900 text-3xl">
+                                        {{$temoignage->auteur}}
+                                    </div>
+                                    <div class="text-gray-600 text-2xl">
+                                        {{$temoignage->titre}}
+                                    </div>
+                                </div>
+                                <div>
 
-                            </div>
-                        </div>
-                        <div class="text-gray-900 text-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum omnis praesentium laborum cupiditate accusamus sunt repellat, deserunt, odit vero iusto mollitia autem maiores, iure nihil et eligen
-                        </div>
-                    </div>
-                </div> 
-
-                {{-- Code du second card temoignages --}}
-                <div class="bg-white p-5 grid grid-cols-12 gap-3">
-                    <div class="col-span-1">
-                        <div class=" rounded-full p-1 w-28 absolute left-2/4">
-                            <img src="{{asset('assets/imgs/etu2.jpg')}}" alt="" srcset="" class="w-28 rounded-full h-24 border-2 shadow-lg">
-                        </div>
-                    </div>
-                    <div class=" col-span-11 p-3">
-                        <div class="flex justify-between">
-                            <div class="flex flex-col gap-2 pb-5">
-                                <div class="text-gray-900 text-3xl">
-                                    Joel Kanyinda
-                                </div>
-                                <div class="text-gray-600 text-2xl">
-                                    Developpeur web chez Systematique
                                 </div>
                             </div>
-                            <div>
-
+                            <div class="text-gray-900 text-xl">
+                                {{$temoignage->descrip}}
                             </div>
                         </div>
-                        <div class="text-gray-900 text-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum omnis praesentium laborum cupiditate accusamus sunt repellat, deserunt, odit vero iusto mollitia autem maiores, iure nihil et eligen
-                        </div>
                     </div>
-                </div>
                 
+
+                @endforeach
             </div>
         </div>
     </div>

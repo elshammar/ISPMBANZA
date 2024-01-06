@@ -4,23 +4,23 @@
             <h1 class="text-5xl text-blue-900 font-bold">
             @foreach ($apropos as $apropo)
                 <div>{{ $apropo->titre}}</div>
-            @endforeach
+            
             </h1>
             <div class="text-xl text-justify">
-            @foreach ($apropos as $apropo)
+            
                 <div>{{ $apropo->descrip }}</div>
-            @endforeach
+            
             </div>
             <div class="bg-yellow-400 p-3 w-32 text-center">
                 Lire plus...
             </div>
+        
         </div>
         <div class=" col-span-3">
-            @foreach ($apropos as $apropo)
-                <img src="{{$apropo->getMedia()[0]['original_url']}}" alt="">
-            @endforeach
             
+                <img src="{{$apropo->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64">
         </div>
+            @endforeach
 
     </div>
 </div>
