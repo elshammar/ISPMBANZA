@@ -1,7 +1,17 @@
-<div >
-    section
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ullam earum, repellat cum quos dolores sint, dignissimos perferendis nesciunt eaque, natus nostrum sequi delectus laboriosam assumenda reiciendis ex at blanditiis?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in accusamus commodi illo libero tempore iste quaerat alias itaque dicta temporibus aliquam adipisci, cum et, non veniam veritatis natus quos?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore itaque quas iure enim aliquam id nulla eveniet, facilis vero incidunt asperiores consequuntur necessitatibus iusto cumque natus totam esse at amet.
-    <livewire:component.depart>
+<div class="pt-40 pb-20">
+    <div class="px-40 pb-20">
+        <div class="flex flex-col gap-10">
+            <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 border-blue-800">
+                Sections
+            </h1>
+            <div class="text-xl w-7/12">
+                Lorem ipsum dolor sit, eveniet quaerat qui. Error numquam nisi esse expedita tempore maiores debitis quos aspernatur consequuntur dolor. Tempora?
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-8 mt-10 ">
+            <livewire:component.depart>
+            <livewire:component.depart>
+            <livewire:component.depart>
+        </div>
+    </div>
 </div>
