@@ -90,97 +90,35 @@
             </div>
 
             {{-- Code Evenements/actualites --}}
-            <div>
-                <div>
-                    <livewire:pages.actualite>
+            <div class="h-screen py-20">
+                <div class="flex flex-col gap-8 pb-10">
+                    <h1 class="text-5xl text-gray-900 text-center">
+                        <span class="font-bold"> Evenements</span> Future
+                    </h1>
+                    <div class="text-2xl text-gray-900 text-center">
+                        Participer aux conférences et autres activités pour rester à jour
+                    </div>
                 </div>
-                <div class="text-red-400 font-bold text-xl pb-3 px-3">
-                    Lire plus...
+                <div class="grid grid-cols-3 gap-5 px-20 ">
+                    <div>
+                        <livewire:component.even>
+                    </div>
+                    <div>
+                        <livewire:component.even>
+                    </div>
+                    <div>
+                        <livewire:component.even>
+                    </div>
                 </div>
             </div>
         </div>
         {{-- Code temoignages anciens etudiants --}}
-        <div class=" h-5/6 mt-20 bg-cover " style="background-image: url('assets/imgs/w.jpeg')">
-            <div class="bg-black opacity-85 h-full px-40 py-32">
-                <div class="flex justify-between pb-20">
-                    <h1 class="text-5xl font-bold text-white border-l-4 pl-5 border-blue-600">
-                        Nos anciens etudiants parlent de Nous
-                    </h1>
-                    <div class="flex gap-2">
-                        <div class="bg-blue-700 text-white p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                            </svg>                          
-                        </div>
-                        <div class="bg-blue-700  text-white p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                            </svg>                          
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Code du premier card temoignage --}}
-                <div class="grid grid-cols-2 px-10 gap-24">
-                    <div class="bg-white p-5 grid grid-cols-12 gap-3">
-                        <div class="col-span-1">
-                            <div class=" rounded-full p-1 w-28 absolute left-40">
-                                <img src="{{asset('assets/imgs/etu2.jpg')}}" alt="" srcset="" class="w-28 rounded-full h-24 border-2 shadow-lg">
-                            </div>
-                        </div>
-                        <div class=" col-span-11 p-3">
-                            <div class="flex justify-between">
-                                <div class="flex flex-col gap-2 pb-5">
-                                    <div class="text-gray-900 text-3xl">
-                                        Merciadi Diki
-                                    </div>
-                                    <div class="text-gray-600 text-2xl">
-                                        Developpeur web chez Systematique
-                                    </div>
-                                </div>
-                                <div>
-
-                                </div>
-                            </div>
-                            <div class="text-gray-900 text-xl">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum omnis praesentium laborum cupiditate accusamus sunt repellat, deserunt, odit vero iusto mollitia autem maiores, iure nihil et eligen
-                            </div>
-                        </div>
-                    </div> 
- 
-                    {{-- Code du second card temoignages --}}
-                    <div class="bg-white p-5 grid grid-cols-12 gap-3">
-                        <div class="col-span-1">
-                            <div class=" rounded-full p-1 w-28 absolute left-2/4">
-                                <img src="{{asset('assets/imgs/etu2.jpg')}}" alt="" srcset="" class="w-28 rounded-full h-24 border-2 shadow-lg">
-                            </div>
-                        </div>
-                        <div class=" col-span-11 p-3">
-                            <div class="flex justify-between">
-                                <div class="flex flex-col gap-2 pb-5">
-                                    <div class="text-gray-900 text-3xl">
-                                        Joel Kanyinda
-                                    </div>
-                                    <div class="text-gray-600 text-2xl">
-                                        Developpeur web chez Systematique
-                                    </div>
-                                </div>
-                                <div>
-
-                                </div>
-                            </div>
-                            <div class="text-gray-900 text-xl">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum omnis praesentium laborum cupiditate accusamus sunt repellat, deserunt, odit vero iusto mollitia autem maiores, iure nihil et eligen
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+        <div>
+            <livewire:pages.temoignages>
         </div>
 
         {{-- Code Revue/article --}}
-        <div class="px-40 py-20 h-screen">
+        <div class=" py-20 h-screen px-40">
             <div>
                 <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 mb-5 border-blue-600">
                     <span class="font-bold">Nos </span>  Artices
@@ -208,127 +146,13 @@
             <div class="grid grid-cols-3 gap-10">
 
                 {{-- Code article1 --}}
-                <div class=" shadow-xl">
-                    <div class="mb-5">
-                        <img src="{{asset('assets/imgs/b.jpg')}}" alt="" srcset="">
-                    </div>
-                    <div class="p-3">
-                        <div class="flex gap-10 border-b pb-3 text-blue-600 font-bold">
-                            <div class="flex gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
-                                    </svg>                                  
-                                </div>
-                                <div>
-                                    Fev 05 2024
-                                </div>
-                            </div>
-                            <div class="flex gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                                    </svg>                                  
-                                </div>
-                                <div>
-                                    Par Prof Nsuadi
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-2xl text-gray-900 py-3">
-                            Theorie de la relativite
-                        </div>
-                        <div class="text-gray-900 text-justify border-b pb-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut necessitatibus, magni ipsa id impedit quas, eligendi hic maiores vero modi suscipit maxime facere accusantium repellat perferendis odit, fugit natus.
-                        </div>
-                    </div>
-                    <div class="text-red-400 font-bold text-xl pb-3 px-3">
-                        Lire plus...
-                    </div>
-                </div>
-
+                <livewire:component.arti>
                 {{-- Code article2 --}}
-                <div class=" shadow-xl">
-                    <div class="mb-5">
-                        <img src="{{asset('assets/imgs/b.jpg')}}" alt="" srcset="">
-                    </div>
-                    <div class="p-3">
-                        <div class="flex gap-10 border-b pb-3 text-blue-600 font-bold">
-                            <div class="flex gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
-                                    </svg>                                  
-                                </div>
-                                <div>
-                                    Fev 05 2024
-                                </div>
-                            </div>
-                            <div class="flex gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                                    </svg>                                  
-                                </div>
-                                <div>
-                                    Par Prof Nsuadi
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-2xl text-gray-900 py-3">
-                            Theorie de la relativite
-                        </div>
-                        <div class="text-gray-900 text-justify border-b pb-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut necessitatibus, magni ipsa id impedit quas, eligendi hic maiores vero modi suscipit maxime facere accusantium repellat perferendis odit, fugit natus.
-                        </div>
-                    </div>
-                    <div class="text-red-400 font-bold text-xl pb-3 px-3">
-                        Lire plus...
-                    </div>
-                </div>
-
+                <livewire:component.arti>
                 {{-- Code article3 --}}
-                <div class=" shadow-xl">
-                    <div class="mb-5">
-                        <img src="{{asset('assets/imgs/b.jpg')}}" alt="" srcset="">
-                    </div>
-                    <div class="p-3">
-                        <div class="flex gap-10 border-b pb-3 text-blue-600 font-bold">
-                            <div class="flex gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
-                                    </svg>                                  
-                                </div>
-                                <div>
-                                    Fev 05 2024
-                                </div>
-                            </div>
-                            <div class="flex gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                                    </svg>                                  
-                                </div>
-                                <div>
-                                    Par Prof Nsuadi
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-2xl text-gray-900 py-3">
-                            Theorie de la relativite
-                        </div>
-                        <div class="text-gray-900 text-justify border-b pb-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut necessitatibus, magni ipsa id impedit quas, eligendi hic maiores vero modi suscipit maxime facere accusantium repellat perferendis odit, fugit natus.
-                        </div>
-                    </div>
-                    <div class="text-red-400 font-bold text-xl pb-3 px-3">
-                        Lire plus...
-                    </div>
-                </div>
-
-            </div>
-        </div> 
+                <livewire:component.arti>
+        </div>
+        </div>
 
         {{-- Code footer --}}
         <div>

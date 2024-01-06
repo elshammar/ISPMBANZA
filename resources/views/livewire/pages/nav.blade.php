@@ -9,11 +9,12 @@
 
             {{-- liens pages --}}
             <div class="flex gap-10   text-xl text-white  " >
-                <div class=""><a href="#" class="">ACCUEIL</a></div>
-                <div class=""><a href="#">EVENEMENTS</a></div>
-                <div><a href="#">SECTIONS</a></div>
-                <div><a href="#">REVUES</a></div>
-                <div><a href="#">CONTACT</a></div>
+                <div class=""><a href="http://127.0.0.1:8000/" class="">ACCUEIL</a></div>
+                <div><a href="http://127.0.0.1:8000/about">A PROPOS</a></div>
+                <div class=""><a href="http://127.0.0.1:8000/evenement">EVENEMENTS</a></div>
+                <div><a href="http://127.0.0.1:8000/section">SECTIONS</a></div>
+                <div><a href="http://127.0.0.1:8000/article">REVUES</a></div>
+                <div><a href="http://127.0.0.1:8000/contact">CONTACT</a></div>
                 <div class=""><a href="#">PROCEDURE D'INSCRIPTION</a></div>
             </div>
         </div>

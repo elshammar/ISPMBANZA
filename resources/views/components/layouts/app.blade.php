@@ -8,7 +8,7 @@
         @livewireStyles
     </head>
     <body>
-        <livewire:component.even>
+        <livewire:component.nav>
         
         {{ $slot }}
         

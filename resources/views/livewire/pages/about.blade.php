@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<div class="px-40 h-screen flex justify-center mt-24 items-center">
+<div class="px-40 h-screen flex justify-center pt-24 items-center">
     <div class="grid grid-cols-6 gap-10">
         <div class="flex flex-col gap-8 col-span-3 justify-center"> 
             <h1 class="text-5xl text-blue-900 font-bold">
@@ -24,8 +23,3 @@
 
     </div>
 </div>
-=======
-<div>
-    <livewire:component.about>
-</div>
->>>>>>> 5a4ef42 (diki 4)
