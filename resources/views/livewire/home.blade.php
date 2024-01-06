@@ -12,43 +12,7 @@
 
             {{-- Code section version juste dans home --}}
             <div class="px-40 pb-20">
-                
-                <div class="flex flex-col gap-10">
-                    <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 border-blue-800">
-                        Sections
-                    </h1>
-                    <div class="text-xl w-7/12">
-                        Lorem ipsum dolor sit, eveniet quaerat qui. Error numquam nisi esse expedita tempore maiores debitis quos aspernatur consequuntur dolor. Tempora?
-                    </div>
-                </div>
-                <div class="grid grid-cols-3 gap-8 mt-10 ">
-                    <div class="shadow-lg">
-                        <div>
-                            <img src="{{asset('assets/imgs/i.jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="text-xl text-gray-600 py-4 text-center ">
-                            Science et Technologie
-                        </div>
-                    </div>
-                    <div class="shadow-lg">
-                        <div>
-                            <img src="{{asset('assets/imgs/i.jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="text-xl text-gray-600 py-4 text-center ">
-                            Lettres et sciences Humaines
-                        </div>
-                    </div>
-                    <div class="shadow-lg">
-                        <div>
-                            <img src="{{asset('assets/imgs/i.jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="text-xl text-gray-600 py-4 text-center">
-                            Section Technique
-                        </div>
-                    </div>
-                </div>
-
-
+                <livewire:component.depart> 
             </div>
     
             {{-- Code notre institution --}}
@@ -109,9 +73,6 @@
                     <div>
                         <livewire:component.even>
                     </div>
-                    <div>
-                        <livewire:component.even>
-                    </div>
                 </div>
             </div>
         </div>
@@ -147,8 +108,8 @@
 
             {{-- Code grid article --}}
             <div class="grid grid-cols-3 gap-10">
-
-            @foreach($article as $articles)
+            
+                <!-- @foreach($article as $articles)
                 {{-- Code article1 --}}
                 <div class=" shadow-xl">
                     <div class="mb-5">
@@ -163,7 +124,7 @@
                                     </svg>                                  
                                 </div>
                                 <div>
-                                {{$articles->date}}
+                                
                                 </div>
                             </div>
                             <div class="flex gap-1">
@@ -173,7 +134,7 @@
                                     </svg>                                  
                                 </div>
                                 <div>
-                                    {{$articles->auteur}}
+                                    
                                 </div>
                             </div>
                         </div>
@@ -188,7 +149,7 @@
                         Lire plus...
                     </div>
                 </div>
-                @endforeach
+                @endforeach -->
 
             </div>
         </div> 

@@ -12,8 +12,6 @@
         <div class="grid grid-cols-2 gap-5">
             <livewire:component.even>
             <livewire:component.even>
-            <livewire:component.even>
-            <livewire:component.even>
         </div>
     </div>
 </div>

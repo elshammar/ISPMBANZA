@@ -1,23 +1,21 @@
 <div>
     {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
+    @foreach($even as $evenement)
     <div class="flex flex-col gap-3 shadow-2xl">
         <div>
-            <img src="{{asset('assets/imgs/t.jpg')}}" alt="" srcset="" class="h-64">
+            <img src="{{$evenement->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64">
         </div>
         <div class="flex gap-2 pb-10">
             <div class="p-3">
                 <div class="bg-blue-500 text-white p-5">
                     <div class="text-4xl text-center font-bold">
-                        29
-                    </div>
-                    <div class="text-xl text-center">
-                        octobre
+                        {{$evenement->date}}
                     </div>
                 </div>
             </div>
             <div class="text-gray-900 p-2 ">
                 <div class="text-2xl">
-                    Conference Novembre 2024
+                    {{$evenement->titre}}
                 </div>
                 <div class="flex gap-2 border-b py-5">
                     <div class="flex gap-1">
@@ -27,7 +25,7 @@
                             </svg>  
                         </div>
                         <div>
-                            7h00am 8h00am
+                            {{$evenement->heure}}
                         </div>
                     </div>
                     <div class="flex gap-1">
@@ -38,14 +36,16 @@
                             </svg>                              
                         </div>
                         <div>
-                            Mbanza-ngungu, RDC  
+                            {{$evenement->lieuEven}} 
                         </div>
                     </div>
                 </div>
+
                 <div class="pt-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cupiditate dolorem sed, accusantium natus itaque libero unde. Amet iste distinctio 
+                {{$evenement->descrip}}  
                 </div>
             </div>
         </div>
     </div>
+    @endforeach
 </div>

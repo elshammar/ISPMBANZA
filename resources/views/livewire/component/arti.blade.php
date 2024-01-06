@@ -1,8 +1,8 @@
 <div>
-    {{-- The whole world belongs to you. --}}
+    @foreach($articles as $article)
     <div class=" shadow-xl">
         <div class="mb-5">
-            <img src="{{asset('assets/imgs/b.jpg')}}" alt="" srcset="">
+            <img src="{{$article->getMedia()[0]['original_url']}}" alt="" srcset="">
         </div>
         <div class="p-3">
             <div class="flex gap-10 border-b pb-3 text-blue-600 font-bold">
@@ -13,7 +13,7 @@
                         </svg>                                  
                     </div>
                     <div>
-                        Fev 05 2024
+                    {{$article->date}}
                     </div>
                 </div>
                 <div class="flex gap-1">
@@ -23,19 +23,20 @@
                         </svg>                                  
                     </div>
                     <div>
-                        Par Prof Nsuadi
+                    {{$article->auteur}}
                     </div>
                 </div>
             </div>
             <div class="text-2xl text-gray-900 py-3">
-                Theorie de la relativite
+                {{$article->titre}}
             </div>
             <div class="text-gray-900 text-justify border-b pb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut necessitatibus, magni ipsa id impedit quas, eligendi hic maiores vero modi suscipit maxime facere accusantium repellat perferendis odit, fugit natus.
+                {{$article->descrip}}
             </div>
         </div>
         <div class="text-red-400 font-bold text-xl pb-3 px-3">
             Lire plus...
         </div>
     </div>
+    @endforeach
 </div>
