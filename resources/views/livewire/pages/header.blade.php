@@ -37,22 +37,13 @@
 
     {{-- images gallerie dans header --}}
     <div class=" " style="position: absolute; top:80%">
+
         <div class="grid grid-cols-12 gap-8 px-40 w-full">
+            @foreach ($galerie as $galeries)
             <div class=" col-span-3">
-                <img src="{{asset('assets/imgs/w.jpeg')}}" alt="" srcset="" class="h-72 w-full">
+                <img src="{{$galeries->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-72 w-full">
             </div>
-            <div class=" col-span-3">
-                <img src="{{asset('assets/imgs/etu2.jpg')}}" alt="" srcset="" class="h-72 w-full">
-
-            </div>
-            <div class=" col-span-3">
-                <img src="{{asset('assets/imgs/h.jpg')}}" alt="" srcset="" class="h-72 w-full">
-
-            </div>
-            <div class=" col-span-3">
-                <img src="{{asset('assets/imgs/h.jpg')}}" alt="" srcset="" class="h-72 w-full">
-
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

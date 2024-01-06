@@ -11,7 +11,7 @@ class galerie extends Model implements HasMedia
 {
     use InteractsWithMedia;
     use HasFactory;
-    protected $fillable=['lib'];
+    protected $fillable=['lib','descrip'];
 
 }
 

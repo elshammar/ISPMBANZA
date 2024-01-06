@@ -11,5 +11,5 @@ class evenements extends Model implements HasMedia
 {
     use InteractsWithMedia;
     use HasFactory;
-    protected $fillable=['titre','descrip','lieuEven','date','heure'];
+    protected $fillable=['titre','descrip','lieuEven','date','heure','lien'];
 }

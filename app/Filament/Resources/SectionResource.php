@@ -13,6 +13,8 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\SectionResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use App\Filament\Resources\SectionResource\RelationManagers;
 
 class SectionResource extends Resource
@@ -27,6 +29,7 @@ class SectionResource extends Resource
             ->schema([
                 TextInput::make('nom'),
                 TextInput::make('descrip'),
+                SpatieMediaLibraryFileUpload::make('images')
             ]);
     }
 
@@ -36,6 +39,7 @@ class SectionResource extends Resource
             ->columns([
                 TextColumn::make('nom'),
                 TextColumn::make('descrip'),
+                SpatieMediaLibraryImageColumn::make('images')
             ])
             ->filters([
                 //

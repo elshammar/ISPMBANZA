@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('lieuEven');
             $table->date('date');
             $table->time('heure');
+            $table->string('lien');
             $table->timestamps();
         });
     }

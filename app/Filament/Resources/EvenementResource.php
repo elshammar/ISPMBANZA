@@ -34,6 +34,7 @@ class EvenementResource extends Resource
                 TextInput::make('descrip'),
                 TextInput::make('lieuEven'),
                 DatePicker::make('date'),
+                TextInput::make('lien'),
                 TimePicker::make('heure')
                     ->datalist([
                         '09:00',
@@ -55,6 +56,7 @@ class EvenementResource extends Resource
                 TextColumn::make('titre'),
                 TextColumn::make('descrip'),
                 TextColumn::make('lieuEven'),
+                TextColumn::make('lien'),
                 TextColumn::make('date')
                     ->date(),
                 TextColumn::make('heure')

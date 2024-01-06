@@ -16,8 +16,9 @@
             </div>
         </div>
         <div class=" col-span-3">
-            {{$image}}
-            <img src="{{asset('assets/imgs/un.jpg')}}" alt="" srcset="">
+            @foreach ($apropos as $apropo)
+                <img src="{{$apropo->getMedia()[0]['original_url']}}" alt="">
+            @endforeach
             
         </div>
 

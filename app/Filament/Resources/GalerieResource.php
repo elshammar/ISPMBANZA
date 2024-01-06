@@ -30,6 +30,7 @@ class GalerieResource extends Resource
         return $form
             ->schema([
                 TextInput::make('lib'),
+                TextInput::make('descrip'),
                 SpatieMediaLibraryFileUpload::make('images')
             ]);
     }
@@ -39,6 +40,7 @@ class GalerieResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('lib'),
+                TextColumn::make('descrip'),
                 SpatieMediaLibraryImageColumn::make('images')
             ])
             ->filters([

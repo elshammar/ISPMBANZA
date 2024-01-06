@@ -71,18 +71,11 @@
                 Gallerie
             </div>
             <div class="text-xl text-gray-400 py-5 flex gap-2 no-underline">
+            @foreach ($galerie as $galeries)
                 <a href="#" class="">
-                    <img src="{{asset('assets/imgs/w.jpeg')}}" alt="" class="w-24">
+                    <img src="{{$galeries->getMedia()[0]['original_url']}}" alt="" class="w-24">
                 </a>
-                <a href="#" class="">
-                    <img src="{{asset('assets/imgs/w.jpeg')}}" alt="" class="w-24">
-                </a>
-                <a href="#" class="">
-                    <img src="{{asset('assets/imgs/w.jpeg')}}" alt="" class="w-24">
-                </a>
-                <a href="#" class="">
-                    <img src="{{asset('assets/imgs/w.jpeg')}}" alt="" class="w-24">
-                </a>
+            @endforeach
             </div>
         </div>
     </div>
