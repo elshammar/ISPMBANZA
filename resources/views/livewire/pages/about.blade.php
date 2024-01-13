@@ -11,8 +11,8 @@
                 <div>{{ $apropo->descrip }}</div>
             
             </div>
-            <div class="bg-yellow-400 p-3 w-32 text-center">
-                Lire plus...
+            <div >
+                <a class="bg-yellow-400 p-3 w-32 text-center" href="{{route('about')}}">Lire plus...</a>
             </div>
         
         </div>

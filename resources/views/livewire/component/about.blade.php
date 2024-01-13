@@ -13,12 +13,9 @@
                     <div>{{ $apropo->descrip }}</div>
             
                 </div>
-                <div class="bg-yellow-400 p-3 w-32 text-center">
-                    Lire plus...
-                </div>
             </div>
             <div class=" col-span-3">
-                <img src="{{$apropo->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64">    
+                <img src="{{$apropo->getMedia()[0]['original_url']}}" alt="" srcset="" >    
             </div>
             @endforeach
         </div>

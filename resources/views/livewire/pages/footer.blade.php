@@ -39,8 +39,24 @@
             <div class="text-2xl font-bold text-white border-b border-white pb-5 w-32">
                 Adresse
             </div>
-            <div class="text-xl text-gray-400 py-5">
-                
+            <div class="text-lg text-gray-400 py-0">
+                    @foreach($contacts as $contact)
+                        <div class="flex gap-1 pt-5">
+                            <div>
+                                Av reservoir, Noki,Mbanza-Ngungu, Kongo-Central, RDC
+                            </div>
+                        </div>
+                        <div class="flex gap-1 pt-5">
+                            <div>
+                               {{$contact->lib}}
+                            </div>
+                        </div>
+                        <div class="flex gap-1 pt-5">
+                            <div>
+                                {{$contact->contenu}}
+                            </div>
+                        </div>
+                    @endforeach
             </div>
         </div>
         <div class=" col-span-2 pl-2">
@@ -73,7 +89,7 @@
             <div class="text-xl text-gray-400 py-5 flex gap-2 no-underline">
             @foreach ($galerie as $galeries)
                 <a href="#" class="">
-                    <img src="{{$galeries->getMedia()[0]['original_url']}}" alt="" class="w-24">
+                    <img src="{{$galeries->getMedia()[0]['original_url']}}" alt="" class="w-14 h-14">
                 </a>
             @endforeach
             </div>

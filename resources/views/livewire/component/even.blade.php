@@ -3,7 +3,7 @@
         @foreach($even as $evenement)
         <div class=" shadow-2xl">
             <div class="mt-2">
-                <img src="{{$evenement->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64">
+                <img src="{{$evenement->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64 w-full">
             </div>
             <div class="grid grid-cols-3 p-0">
                     <div class="bg-blue-500 h-20 w-28 rounded-lg text-white p-2 m-4">
