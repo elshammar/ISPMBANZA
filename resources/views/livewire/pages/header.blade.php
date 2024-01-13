@@ -1,10 +1,10 @@
 <div class="h-screen bg-cover" style="background-image: url('assets/imgs/i.jpg')" >
-    <div class=" h-screen w-full bg-gray-900 opacity-80 ">
-
-        {{-- Nav --}}
-        <div>
+    <div class=" h-screen w-full bg-gray-900 opacity-80">
+        <div class="">
             <livewire:pages.nav>
         </div> 
+
+        {{-- Nav --}}
 
         {{-- Code header --}}
         <div class="text-white flex py-20 px-40 h-full w-full justify-between  items-center">
@@ -14,8 +14,8 @@
                 </svg>
                   
             </div>
-            <div class="px-52 flex flex-col justify-center text-center items-center gap-8 text-2xl  font-bold">
-                <div >
+            <div class="px-28 flex flex-col justify-center text-center items-center gap-3 text-xl  font-bold">
+                <div class="">
                     L'education est la base de la partie
                 </div>
                 <div class="text-6xl">

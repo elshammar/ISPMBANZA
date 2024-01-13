@@ -5,13 +5,11 @@
                 Sections
             </h1>
             <div class="text-xl w-7/12">
-                Lorem ipsum dolor sit, eveniet quaerat qui. Error numquam nisi esse expedita tempore maiores debitis quos aspernatur consequuntur dolor. Tempora?
+            Les sciences et la technologie jouent un rôle décisif dans la promotion du développement durable à même de faire face aux défis économiques, sociaux et environnementaux actuels, ainsi que dans l’appui au développement et à son utilisation responsable au profit de l’humanité.
             </div>
         </div>
         <div class="grid grid-cols-3 gap-8 mt-10 ">
-            <livewire:component.depart>
-            <livewire:component.depart>
-            <livewire:component.depart>
+            <!-- <livewire:component.depart>  -->
         </div>
     </div>
 </div>

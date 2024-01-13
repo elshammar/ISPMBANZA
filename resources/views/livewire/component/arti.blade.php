@@ -1,11 +1,11 @@
-<div>
+<div class="grid grid-cols-3 gap-10 ">
     @foreach($articles as $article)
-    <div class=" shadow-xl">
+    <div class=" shadow-2xl col-span-1">
         <div class="mb-5">
             <img src="{{$article->getMedia()[0]['original_url']}}" alt="" srcset="">
         </div>
         <div class="p-3">
-            <div class="flex gap-10 border-b pb-3 text-blue-600 font-bold">
+            <div class="flex gap-10 border-b pb-3 w-70 text-xs text-blue-600 font-bold">
                 <div class="flex gap-1">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -13,7 +13,7 @@
                         </svg>                                  
                     </div>
                     <div>
-                    {{$article->date}}
+                        {{$article->date}}
                     </div>
                 </div>
                 <div class="flex gap-1">
@@ -23,7 +23,7 @@
                         </svg>                                  
                     </div>
                     <div>
-                    {{$article->auteur}}
+                        {{$article->auteur}}
                     </div>
                 </div>
             </div>

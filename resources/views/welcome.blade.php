@@ -6,12 +6,12 @@
     <title>ISP MBANZA-NGUNGU</title>
     @vite('resources/css/app.css')
     @livewireStyles
-</head>
-<body>
-  <h1>
-   <livewire:home>
-  </h1>
-  @livewireScripts
+  </head>
+  <body>
+    <h1>
+      <livewire:home>
+    </h1>
+    @livewireScripts
 </body>
 </html>
 

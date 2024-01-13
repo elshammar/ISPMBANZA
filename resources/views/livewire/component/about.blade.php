@@ -18,8 +18,7 @@
                 </div>
             </div>
             <div class=" col-span-3">
-                <img src="{{$apropo->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64">
-                
+                <img src="{{$apropo->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64">    
             </div>
             @endforeach
         </div>

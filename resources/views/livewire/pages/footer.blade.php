@@ -48,10 +48,10 @@
                 Menu
             </div>
             <div class="text-xl text-gray-400 py-5 flex flex-col gap-3 no-underline">
-                <a href="#" class=""> Accueil </a>
-                <a href="#" class=""> Evenement  </a>
-                <a href="#" class=""> Revue </a>
-                <a href="#" class=""> Contact </a>
+                <a href="{{route('home')}}" class=""> Accueil </a>
+                <a href="{{route('evenement')}}" class=""> Evenement  </a>
+                <a href="{{route('article')}}" class=""> Revue </a>
+                <a href="{{route('contact')}}" class=""> Contact </a>
             </div>
         </div>
         <div class=" col-span-2">
@@ -59,9 +59,9 @@
                 Sections
             </div>
             <div class="text-xl text-gray-400 py-5 flex flex-col gap-3 no-underline">
-                <a href="#" class=""> Sciences et téchnologies </a>
-                <a href="#" class=""> Lettres et sciences humaines </a>
-                <a href="#" class=""> Technique </a>
+            @foreach($sections as $section)
+                <a href="{{route('section')}}" class="">{{$section->nom}}</a>
+            @endforeach
             </div>
         </div>
 

@@ -1,24 +1,23 @@
 <div>
     {{-- If your happiness depends on money, you will never be happy with yourself. --}}
-    <div class="fixed w-screen">
+    <div class="fixed w-screen mb-60">
         <div class="flex justify-between bg-gray-900 px-40 border border-1 border-gray-800 py-3  gap-0 items-center" >
             <div class="flex items-center gap-20">
     
                 {{-- logo site --}}
                 <div class="">
-                    <img src="{{asset('assets/imgs/log.png')}}" alt="" srcset="" class="w-16">
+                    <a href="{{route('home')}}"><img src="{{asset('assets/imgs/log.png')}}" alt="" srcset="" class="w-16"></a>
                 </div>
     
                 {{-- liens pages --}}
-                <div class="flex gap-10   text-xl text-white  " >
-                    <div class=""><a href="http://127.0.0.1:8000/" class="">ACCUEIL</a></div>
-                    <div><a href="http://127.0.0.1:8000/about">A PROPOS</a></div>
-                    <div class=""><a href="http://127.0.0.1:8000/evenement">EVENEMENTS</a></div>
-                    <div><a href="http://127.0.0.1:8000/section">SECTIONS</a></div>
-                    <div><a href="http://127.0.0.1:8000/article">REVUES</a></div>
-                    <div><a href="http://127.0.0.1:8000/contact">CONTACT</a></div>
-                    <div class=""><a href="#">PROCEDURE D'INSCRIPTION</a></div>
-                </div>
+                <div class="flex gap-10   text-xl text-white  lg:text-lg" >
+                <div class=""><a href="{{route('home')}}" class="">ACCUEIL</a></div>
+                <div><a href="{{route('about')}}">A PROPOS</a></div>
+                <div class=""><a href="{{route('evenement')}}">EVENEMENTS</a></div>
+                <div><a href="{{route('section')}}">SECTIONS</a></div>
+                <div><a href="{{route('article')}}">REVUES</a></div>
+                <div><a href="{{route('contact')}}">CONTACT</a></div>
+            </div>
             </div>
     
             {{-- liens reseaux nav --}}

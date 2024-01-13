@@ -25,13 +25,7 @@
         </div>
 
         {{-- Code grid article --}}
-        <div class="grid grid-cols-3 gap-10">
-
-            {{-- Code article1 --}}
-            <livewire:component.arti>
-            {{-- Code article2 --}}
-            <livewire:component.arti>
-            {{-- Code article3 --}}
+        <div>
             <livewire:component.arti>
         </div>
     </div>  

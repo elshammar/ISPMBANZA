@@ -6,8 +6,8 @@
             </div>
 
             {{-- Code about --}}
-            <div>
-                <livewire:component.about>
+            <div class="mt-28">
+                <livewire:pages.about>
             </div>
 
             {{-- Code section version juste dans home --}}
@@ -66,11 +66,10 @@
                         Participer aux conférences et autres activités pour rester à jour
                     </div>
                 </div>
-                <div class="grid grid-cols-3 gap-5 px-20 ">
+                <div class="px-20 ">
                     <div>
                         <livewire:component.even>
-                    </div>
-                    
+                    </div>  
                 </div>
             </div>
         </div>
@@ -80,7 +79,7 @@
         </div>
 
         {{-- Code Revue/article --}}
-        <div class=" py-20 h-screen px-40">
+        <div class=" py-20 h-screen px-40 mb-80">
             <div>
                 <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 mb-5 border-blue-600">
                     <span class="font-bold">Nos </span>  Artices
@@ -103,10 +102,8 @@
                     </div>
                 </div>
             </div>
-
             {{-- Code grid article --}}
             <div class="grid grid-cols-3 gap-10">
-            
                 @foreach($article as $articles)
                 {{-- Code article1 --}}
                 <div class=" shadow-xl">
@@ -114,7 +111,7 @@
                         <img src="{{$articles->getMedia()[0]['original_url']}}" alt="" srcset="">
                     </div>
                     <div class="p-3">
-                        <div class="flex gap-10 border-b pb-3 text-blue-600 font-bold">
+                        <div class="flex gap-10 border-b pb-3  w-70 text-xs text-blue-600 font-bold">
                             <div class="flex gap-1">
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -122,7 +119,7 @@
                                     </svg>                                  
                                 </div>
                                 <div>
-                                
+                                    {{$articles->date}}
                                 </div>
                             </div>
                             <div class="flex gap-1">
@@ -131,8 +128,8 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                                     </svg>                                  
                                 </div>
-                                <div>
-                                    
+                                <div >
+                                    {{$articles->auteur}}
                                 </div>
                             </div>
                         </div>
@@ -150,12 +147,12 @@
                 @endforeach 
 
             </div>
-        </div> 
+        </div>  
 
         {{-- Code footer --}}
         <div>
             <livewire:pages.footer>
-        </div>
+        </div> 
 </div>
 <script>
     const scrolling = ()=>{

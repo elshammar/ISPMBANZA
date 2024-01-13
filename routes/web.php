@@ -22,13 +22,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
-Route::get('/contact', Contact::class);
-Route::get('/about', About::class);
-Route::get('/section', Section::class);
-Route::get('/article', Article::class);
-Route::get('/temoignage',Temoignages::class);
-Route::get('/evenement', Evenement::class);
+})->name('home');
+Route::get('/contact', Contact::class)->name('contact');
+Route::get('/about', About::class)->name('about');
+Route::get('/article', Article::class)->name('article');
+Route::get('/temoignage',Temoignages::class)->name('temoignage');
+Route::get('/evenement', Evenement::class)->name('evenement');
+Route::get('/section',Section::class)->name('section');
 
 
 

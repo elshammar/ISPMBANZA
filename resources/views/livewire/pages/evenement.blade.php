@@ -9,8 +9,8 @@
                 Participer aux conférences et autres activités pour rester à jour
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-5">
-            {{-- <livewire:component.even> --}}
+        <div>
+            <livewire:component.even> 
         </div>
     </div>
 </div>
