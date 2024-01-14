@@ -18,7 +18,7 @@
                 <div class="text-xl">
                     L'education est la base de la partie
                 </div>
-                <div class="text-4xl md:text-6x">
+                <div class="text-4xl md:text-6xl">
                     BIENVENUE SUR LE PORTAIL DE L'ISP DE MBANZA-NGUNGU
                 </div>
                 <div>
