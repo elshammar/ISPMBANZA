@@ -6,6 +6,7 @@
                 <h1 class="text-5xl font-bold text-white border-l-4 pl-5 border-blue-600">
                     Nos anciens etudiants parlent de Nous
                 </h1>
+
                 <div class="flex gap-2">
                     <div class="bg-blue-700 text-white p-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-6">

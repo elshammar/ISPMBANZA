@@ -9,8 +9,8 @@
             <div class="text-gray-600 bg-gray-300">
                 <livewire:component.about>
             </div>
-            <div class="px-8 lg:px-40 my-10">
-                <h1 class="text-5xl uppercase text-blue-900 font-bold">Sections</h1>
+            <div class="px-8 lg:px-40">
+                <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 mb-5 border-blue-600">Sections</h1>
                 <p class="text-justify text-xl text-gray-600 lg:py-5">
                     Les programmes de formation dispensés par la section visent à former des professionnels capables de s'insérer dans le monde du travail et de contribuer au développement du pays. Ils sont axés sur l'acquisition de connaissances
                     théoriques et pratiques dans le domaine de la pedagogie.
@@ -22,7 +22,7 @@
             </div>
     
             {{-- Code notre institution --}}
-            <div class="h-5/6 mt-20 bg-cover " style="background-image: url('assets/imgs/w.jpeg')">
+            <div class="h-screen mt-20 bg-cover " style="background-image: url('assets/imgs/w.jpeg')">
                 <div class="bg-blue-950 opacity-85 h-full px-8 lg:px-40 py-32">
                     <h1 class="text-5xl text-white text-center">
                         <span class="font-bold"> Pourquoi choisir</span> notre institution ?
@@ -65,7 +65,7 @@
             {{-- Code Evenements/actualites --}}
             <div class="h-screen px-8 lg:px-40 py-20">
                 <div class="flex flex-col gap-8 pb-10">
-                    <h1 class="text-5xl text-blue-900 text-start">
+                    <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 mb-5 border-blue-600">
                         <span class="font-bold"> Evenements</span> Future
                     </h1>
                     <div class="text-2xl text-gray-600 text-start">
@@ -90,12 +90,12 @@
         </div>
 
         {{-- Code Revue/article --}}
-        <div class=" py-20 h-screen px-8 lg:px-40 mb-80">
+        <div class="px-8 lg:px-40 py-10">
             <div>
                 <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 mb-5 border-blue-600">
                     <span class="font-bold">Nos </span>  Artices
                 </h1>
-                <div class="flex justify-between pb-20">
+                <div class="flex justify-betwee py-5">
                     <div class="text-gray-900 text-2xl">
                         Retrouver l'ensemble de nos articles dans cette section
                     </div>
@@ -113,17 +113,6 @@
                     </div>
                 </div>
             </div>
-            {{-- Code grid article --}}
-{{--             <section class="splide" aria-label="Splide Basic HTML Example">
-                <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide">Slide 01</li>
-                          <li class="splide__slide">Slide 02</li>
-                          <li class="splide__slide">Slide 03</li>
-                      </ul>
-                </div>
-            </section> --}}
-
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 @foreach($article as $articles)
