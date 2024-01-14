@@ -1,6 +1,6 @@
 <div>
     {{-- Stop trying to control. --}}
-    <div class="lg:px-40 h-screen flex justify-center lg: items-center">
+    <div class="lg:px-40 py-16 lg:h-screen flex justify-center lg: items-center">
         <div class="grid grid-cols-1 lg:grid-cols-6 px-8 lg:gap-10">
             <div class="flex flex-col gap-8 col-span-3 justify-center"> 
                 <h1 class="text-5xl text-blue-900 font-bold">
@@ -16,7 +16,7 @@
                 </div>
             
             </div>
-            <div class=" col-span-3">
+            <div class="col-span-3 my-10">
                 <img src="{{$apropo->getMedia()[0]['original_url']}}" alt="" srcset="" >    
             </div>
             @endforeach

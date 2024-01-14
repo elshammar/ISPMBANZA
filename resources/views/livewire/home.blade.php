@@ -1,7 +1,7 @@
 <div>
     {{-- Code header --}}
         <div>
-            <div>
+            <div class="">
                 <livewire:pages.header>
             </div>
 
@@ -9,7 +9,7 @@
             <div class="text-gray-600 bg-gray-300">
                 <livewire:component.about>
             </div>
-            <div class="px-8 lg:px-40 lg:my-10">
+            <div class="px-8 lg:px-40 my-10">
                 <h1 class="text-5xl uppercase text-blue-900 font-bold">Sections</h1>
                 <p class="text-justify text-xl text-gray-600 lg:py-5">
                     Les programmes de formation dispensés par la section visent à former des professionnels capables de s'insérer dans le monde du travail et de contribuer au développement du pays. Ils sont axés sur l'acquisition de connaissances
