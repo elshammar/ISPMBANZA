@@ -5,8 +5,9 @@ use App\Livewire\Pages\About;
 use App\Livewire\Pages\Article;
 use App\Livewire\Pages\Contact;
 use App\Livewire\Pages\Section;
-use App\Livewire\Pages\Temoignages;
 use App\Livewire\Pages\Evenement;
+use App\Livewire\Pages\Temoignages;
+use App\Livewire\Pages\DetailSection;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,7 +29,8 @@ Route::get('/about', About::class)->name('about');
 Route::get('/article', Article::class)->name('article');
 Route::get('/temoignage',Temoignages::class)->name('temoignage');
 Route::get('/evenement', Evenement::class)->name('evenement');
-Route::get('/section',Section::class)->name('section');
+Route::get('/section',Section::class)->name('sections');
+Route::get('/section/{id}',DetailSection::class)->name('section');
 
 
 

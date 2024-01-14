@@ -76,7 +76,7 @@
             </div>
             <div class="text-xl text-gray-400 py-5 flex flex-col gap-3 no-underline">
             @foreach($sections as $section)
-                <a href="{{route('section')}}" class="">{{$section->nom}}</a>
+                <a href="{{route('section',['id'=>$section->id])}}" class="">{{$section->nom}}</a>
             @endforeach
             </div>
         </div>

@@ -27,7 +27,7 @@ x-data="{
                 <div class=""><a href="{{route('home')}}" class="">ACCUEIL</a></div>
                 <div><a href="{{route('about')}}">A PROPOS</a></div>
                 <div class=""><a href="{{route('evenement')}}">EVENEMENTS</a></div>
-                <div><a href="{{route('section')}}">SECTIONS</a></div>
+                <div><a href="{{route('sections')}}">SECTIONS</a></div>
                 <div><a href="{{route('article')}}">REVUES</a></div>
                 <div><a href="{{route('contact')}}">CONTACT</a></div>
             </div>
