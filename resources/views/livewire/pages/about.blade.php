@@ -1,4 +1,4 @@
-<div class="px-8 lg:px-40 py-32">
+<div class="px-8 lg:px-16 py-32">
     <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 border-blue-800">
         A propos
     </h1>

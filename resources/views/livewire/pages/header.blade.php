@@ -7,7 +7,7 @@
         {{-- Nav --}}
 
         {{-- Code header --}}
-        <div class="text-white flex py-20 lg:px-40 xl:h-full w-full justify-between items-center">
+        <div class="text-white flex py-20 lg:px-16 xl:h-full w-full justify-between items-center">
             <div class=" text-6xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -38,9 +38,11 @@
     {{-- images gallerie dans header --}}
     <div class="">
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5  lg:px-40 w-full relative bottom-32 z-10 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 py-12  lg:px-40 w-full relative bottom-32 z-10 px-8">
+            <livewire:component.cardheader/>
+            <livewire:component.cardheader/>
+            <livewire:component.cardheader/>
 
-            {{-- <livewire:component.cardheader/> --}}
 {{--             <livewire:component.cardheader/>
             <livewire:component.cardheader/> --}}
 

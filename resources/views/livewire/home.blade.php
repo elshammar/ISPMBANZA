@@ -6,23 +6,25 @@
             </div>
 
             {{-- Code about --}}
-            <div class="text-gray-600 bg-gray-300">
+            <div class="text-gray-600">
                 <livewire:component.about>
             </div>
-            <div class="px-8 lg:px-40">
-                <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 mb-5 border-blue-600">Sections</h1>
-                <p class="text-justify text-xl text-gray-600 lg:py-5">
-                    Les programmes de formation dispensés par la section visent à former des professionnels capables de s'insérer dans le monde du travail et de contribuer au développement du pays. Ils sont axés sur l'acquisition de connaissances
-                    théoriques et pratiques dans le domaine de la pedagogie.
-                </p>
-            </div>
-            {{-- Code section version juste dans home --}}
-            <div class="px-8 lg:px-40 lg:pb-20">
-                <livewire:component.depart> 
+            <div class="bg-gray-300">
+                <div class="px-8 lg:px-16">
+                    <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 mb-5 border-blue-600">Sections</h1>
+                    <p class="text-justify text-xl text-gray-600 lg:py-5">
+                        Les programmes de formation dispensés par la section visent à former des professionnels capables de s'insérer dans le monde du travail et de contribuer au développement du pays. Ils sont axés sur l'acquisition de connaissances
+                        théoriques et pratiques dans le domaine de la pedagogie.
+                    </p>
+                </div>
+                {{-- Code section version juste dans home --}}
+                <div class="px-8 lg:px-40 lg:pb-20">
+                    <livewire:component.depart> 
+                </div>
             </div>
     
             {{-- Code notre institution --}}
-            <div class="h-screen mt-20 bg-cover " style="background-image: url('assets/imgs/w.jpeg')">
+            <div class="h-screen bg-cover " style="background-image: url('assets/imgs/w.jpeg')">
                 <div class="bg-blue-950 opacity-85 h-full px-8 lg:px-40 py-32">
                     <h1 class="text-5xl text-white text-center">
                         <span class="font-bold"> Pourquoi choisir</span> notre institution ?

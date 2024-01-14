@@ -14,7 +14,7 @@ x-data="{
             </ul>
         </div>
     </div>
-    <div class="flex justify-between px-5 lg:px-40 border border-1 border-gray-800 py-3  gap-0 items-center" id="nav">
+    <div class="flex justify-between px-5 lg:px-16 border border-1 border-gray-800 py-3  gap-0 items-center" id="nav">
         <div class="flex items-center gap-20 ">
 
             {{-- logo site --}}

@@ -5,7 +5,7 @@
             <div>
                 <img src="{{$section->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64 w-full">
             </div>
-            <div class="text-xl text-gray-600 py-4 text-center ">
+            <div class="text-xl text-gray-600 py-4 text-center bg-blue-500">
                 {{$section->nom}}
             </div>
         </a>
