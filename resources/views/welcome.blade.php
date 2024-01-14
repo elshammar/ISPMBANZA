@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISP MBANZA-NGUNGU</title>
+    <style>
+      [x-cloak] { display: none !important; }
+    </style>
     @vite('resources/css/app.css')
     @livewireStyles
   </head>

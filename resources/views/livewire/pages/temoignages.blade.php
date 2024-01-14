@@ -1,6 +1,6 @@
 <div>
     {{-- Success is as dangerous as failure. --}}
-    <div class=" h-5/6 mt-20 bg-cover " style="background-image: url('assets/imgs/w.jpeg')">
+    <div class=" h-5/6 bg-cover" style="background-image: url('assets/imgs/w.jpeg')">
         <div class="bg-black opacity-85 h-full px-40 py-32">
             <div class="flex justify-between pb-20">
                 <h1 class="text-5xl font-bold text-white border-l-4 pl-5 border-blue-600">

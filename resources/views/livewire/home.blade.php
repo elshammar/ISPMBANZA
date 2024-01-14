@@ -6,49 +6,55 @@
             </div>
 
             {{-- Code about --}}
-            <div class="mt-28">
+            <div class="mt-28 text-gray-600">
                 <livewire:pages.about>
             </div>
-
+            <div class="px-8 lg:px-40 lg:my-10">
+                <h1 class="text-5xl uppercase text-blue-900 font-bold">Sections</h1>
+                <p class="text-justify text-xl text-gray-600 lg:py-5">
+                    Les programmes de formation dispensés par la section visent à former des professionnels capables de s'insérer dans le monde du travail et de contribuer au développement du pays. Ils sont axés sur l'acquisition de connaissances
+                    théoriques et pratiques dans le domaine de la pedagogie.
+                </p>
+            </div>
             {{-- Code section version juste dans home --}}
-            <div class="px-40 pb-20">
+            <div class="px-8 lg:px-40 lg:pb-20">
                 <livewire:component.depart> 
             </div>
     
             {{-- Code notre institution --}}
-            <div class=" h-5/6 mt-20 bg-cover " style="background-image: url('assets/imgs/w.jpeg')">
-                <div class="bg-blue-950 opacity-85 h-full px-40 py-32">
+            <div class="h-5/6 mt-20 bg-cover " style="background-image: url('assets/imgs/w.jpeg')">
+                <div class="bg-blue-950 opacity-85 h-full px-8 lg:px-40 py-32">
                     <h1 class="text-5xl text-white text-center">
                         <span class="font-bold"> Pourquoi choisir</span> notre institution ?
                     </h1>
-                    <div class="grid grid-cols-3 text-white text-xl mt-40 gap-20">
-                        <div class="flex flex-col gap-5">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 text-white text-xl mt-40 gap-20">
+                        <div class="flex flex-col gap-5 justify-center items-center ">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
                                 </svg>
                             </div>
-                            <div>
+                            <div class="text-justify ">
                                 Former les enseignants qualifiés du secondaire dans toutes les disciplines de formation générale, technique, artistique et professionnelle
                             </div>
                         </div>
-                        <div class="flex flex-col gap-5">
+                        <div class="flex flex-col gap-5 justify-center items-center ">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>                          
                             </div>
-                            <div>
+                            <div class="text-justify">
                                 Organiser la recherche dans le domaine de la pédagogie appliquée afin d’améliorer la qualité de l’enseignement maternel, primaire, secondaire et professionnel
                             </div>
                         </div>
-                        <div class="flex flex-col gap-5">
+                        <div class="flex flex-col justify-center items-center gap-5">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
                                 </svg>                          
                             </div>
-                            <div>
+                            <div class="text-justify">
                                 Vulgariser les résultats de la recherche notamment par la production et la diffusion des manuels scolaires adaptés.
                             </div>
                         </div>
@@ -57,19 +63,24 @@
             </div>
 
             {{-- Code Evenements/actualites --}}
-            <div class="h-screen py-20">
+            <div class="h-screen px-8 lg:px-40 py-20">
                 <div class="flex flex-col gap-8 pb-10">
-                    <h1 class="text-5xl text-gray-900 text-center">
+                    <h1 class="text-5xl text-blue-900 text-start">
                         <span class="font-bold"> Evenements</span> Future
                     </h1>
-                    <div class="text-2xl text-gray-900 text-center">
+                    <div class="text-2xl text-gray-600 text-start">
                         Participer aux conférences et autres activités pour rester à jour
                     </div>
                 </div>
-                <div class="px-20 ">
+                <div class="lg:px-20">
                     <div>
                         <livewire:component.even>
                     </div>  
+                </div>
+                <div class="flex justify-center items-center py-16">
+                    <div class="bg-yellow-500 text-white w-54 p-3 rounded-md">
+                        <a href="">Touts les evenements ...</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,7 +90,7 @@
         </div>
 
         {{-- Code Revue/article --}}
-        <div class=" py-20 h-screen px-40 mb-80">
+        <div class=" py-20 h-screen px-8 lg:px-40 mb-80">
             <div>
                 <h1 class="text-5xl font-bold text-gray-900 border-l-4 pl-5 mb-5 border-blue-600">
                     <span class="font-bold">Nos </span>  Artices
@@ -103,12 +114,12 @@
                 </div>
             </div>
             {{-- Code grid article --}}
-            <div class="grid grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 @foreach($article as $articles)
                 {{-- Code article1 --}}
                 <div class=" shadow-xl">
                     <div class="mb-5">
-                        <img src="{{$articles->getMedia()[0]['original_url']}}" alt="" srcset="">
+                        <img src="{{$articles->getMedia()[0]['original_url']}}" alt="" srcset="" class="w-96 h-48">
                     </div>
                     <div class="p-3">
                         <div class="flex gap-10 border-b pb-3  w-70 text-xs text-blue-600 font-bold">
@@ -137,7 +148,7 @@
                             {{$articles->titre}}
                         </div>
                         <div class="text-gray-900 text-justify border-b pb-3">
-                            {{$articles->descrip}}
+                            {{substr($articles->descrip,0,25)}}
                         </div>
                     </div>
                     <div class="text-red-400 font-bold text-xl pb-3 px-3">

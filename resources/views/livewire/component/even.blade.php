@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 gap-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
     {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
         @foreach($even as $evenement)
         <div class=" shadow-2xl">
@@ -6,7 +6,7 @@
                 <img src="{{$evenement->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64 w-full">
             </div>
             <div class="grid grid-cols-3 p-0">
-                    <div class="bg-blue-500 h-20 w-28 rounded-lg text-white p-2 m-4">
+                    <div class="bg-blue-500 h-20 w-28 rounded-lg text-white p-2 lg:m-4">
                         <div class="text-lg text-center font-bold">
                             {{$evenement->date}}
                         </div>
@@ -41,7 +41,7 @@
                             </div>
                     
                             <div class="pt-2">
-                                {{$evenement->descrip}}  
+                                {{substr($evenement->descrip,0,25)}}...
                             </div>
                         </div>
                     

@@ -1,4 +1,4 @@
-<div class=" bg-gray-900 Av reservoir, Noki,Mbanza-Ngungu, Kongo-Central, RDC">
+<div class=" bg-gray-900">
     <div class="flex justify-between border-b py-3 px-40">
 
         {{-- logo footer --}}
