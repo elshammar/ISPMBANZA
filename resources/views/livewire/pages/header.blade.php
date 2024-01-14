@@ -1,4 +1,4 @@
-<div class="h-screen bg-cover" style="background-image: url('assets/imgs/i.jpg')" >
+<div class="bg-cover" style="background-image: url('assets/imgs/i.jpg')" >
     <div class="h-screen w-full bg-gray-900 opacity-80">
         <div class="fixed z-50"style="">
             <livewire:pages.nav>

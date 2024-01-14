@@ -6,8 +6,8 @@
             </div>
 
             {{-- Code about --}}
-            <div class="mt-28 text-gray-600">
-                <livewire:pages.about>
+            <div class="text-gray-600 bg-gray-300">
+                <livewire:component.about>
             </div>
             <div class="px-8 lg:px-40 lg:my-10">
                 <h1 class="text-5xl uppercase text-blue-900 font-bold">Sections</h1>
@@ -114,12 +114,23 @@
                 </div>
             </div>
             {{-- Code grid article --}}
+{{--             <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">Slide 01</li>
+                          <li class="splide__slide">Slide 02</li>
+                          <li class="splide__slide">Slide 03</li>
+                      </ul>
+                </div>
+            </section> --}}
+
+
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 @foreach($article as $articles)
                 {{-- Code article1 --}}
-                <div class=" shadow-xl">
+                <div class="shadow-xl">
                     <div class="mb-5">
-                        <img src="{{$articles->getMedia()[0]['original_url']}}" alt="" srcset="" class="w-96 h-48">
+                        <img src="{{$articles->getMedia()[0]['original_url']}}" alt="" srcset="" class="w-full h-48">
                     </div>
                     <div class="p-3">
                         <div class="flex gap-10 border-b pb-3  w-70 text-xs text-blue-600 font-bold">
@@ -156,10 +167,8 @@
                     </div>
                 </div>
                 @endforeach 
-
             </div>
-        </div>  
-
+        </div>
         {{-- Code footer --}}
         <div>
             <livewire:pages.footer>
@@ -168,9 +177,9 @@
 <script>
     const scrolling = ()=>{
         if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600)
-            document.querySelector('#nav').classList.add('bg-red-700');
+            document.querySelector('#nav').classList.add('bg-black');
         else 
-            document.querySelector('#nav').classList.remove('bg-red-700');
+            document.querySelector('#nav').classList.remove('bg-black');
     }
     window.addEventListener("scroll",scrolling)
 </script>

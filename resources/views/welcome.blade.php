@@ -7,14 +7,28 @@
     <style>
       [x-cloak] { display: none !important; }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
     @livewireStyles
   </head>
   <body>
     <h1>
       <livewire:home>
     </h1>
+    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">Slide 01</li>
+          <li class="splide__slide">Slide 02</li>
+          <li class="splide__slide">Slide 03</li>
+        </ul>
+      </div>
+    </div>
     @livewireScripts
 </body>
+
 </html>
+
 
