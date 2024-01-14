@@ -6,8 +6,16 @@
     <div class="grid grid-cols-3 gap-4 px-10 my-20">
         @foreach($departement as $depart)
             @if ($depart != null)
-                <div class="flex justify-center shadow-lg py-3">
-                    {{$depart->nom}}
+                <div class="grid shadow-lg py-3">
+                    <div>
+                        <div>
+                            <img src="{{$depart->getMedia()[0]['original_url']}}" alt="" srcset="" class="h-64 w-full">
+                        </div>
+                    </div>
+                        
+                    <div class="text-center">
+                        {{$depart->nom}}
+                    </div>
                 </div>
             @endif
         @endforeach
