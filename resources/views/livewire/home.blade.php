@@ -4,7 +4,7 @@
             <div class="">
                 <livewire:pages.header>
             </div>
-
+            
             {{-- Code about --}}
             <div class="text-gray-600">
                 <livewire:component.about>
