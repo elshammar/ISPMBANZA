@@ -11,7 +11,7 @@
                     <div>{{substr($apropos[0]->descrip,0,208)  }}...</div>
                 </div>
                 <div >
-                    <a class="bg-yellow-400 p-3 w-32 text-center" href="{{route('about')}}">Lire plus...</a>
+                    <a href="{{route('about')}}" class="bg-blue-900 w-20 text-white py-2 px-2 text-sm">Lire Plus...</a>
                 </div>
             
             </div>

@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <div class="text-red-400 font-bold text-xl pb-3 px-3">
-                        Lire plus...
+                        <a href="{{route('article')}}">Lire Plus ...</a>
                     </div>
                 </div>
                 @endforeach 

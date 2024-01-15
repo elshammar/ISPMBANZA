@@ -34,9 +34,6 @@
                 {{$article->descrip}}
             </div>
         </div>
-        <div class="text-red-400 font-bold text-xl pb-3 px-3">
-            Lire plus...
-        </div>
     </div>
     @endforeach
 </div>

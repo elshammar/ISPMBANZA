@@ -24,7 +24,7 @@
             {{-- Code du premier card temoignage --}}
                 <div class=" p-5 grid grid-cols-2 gap-10">
                     @foreach ($temoignages as $temoignage)
-                    <div class="flex shadow-2xl bg-white w-full ">
+                    <div class="flex shadow-2xl bg-white w-full rounded-2xl">
                         <div >
                             <div class=" rounded-full p-1 w-28">
                                 <img src="{{$temoignage->getMedia()[0]['original_url']}}" alt="" srcset="" class="w-28 rounded-full h-24 border-2 shadow-lg">
@@ -32,19 +32,16 @@
                         </div>
                         <div class="">
                             <div class="flex justify-between">
-                                <div class="flex flex-col gap-2 pb-5">
-                                    <div class="text-gray-900 text-3xl">
+                                <div class="flex flex-col gap-2 pb-2">
+                                    <div class="text-gray-900 font-bold text-md">
                                         {{$temoignage->auteur}}
                                     </div>
-                                    <div class="text-gray-600 text-2xl">
+                                    <div class="text-gray-600 text-sm">
                                         {{$temoignage->titre}}
                                     </div>
                                 </div>
-                                <div>
-
-                                </div>
                             </div>
-                            <div class="text-gray-900 text-xl">
+                            <div class="text-gray-900 text-sm mb-3">
                                 {{$temoignage->descrip}}
                             </div>
                         </div>
